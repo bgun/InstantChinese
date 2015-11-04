@@ -5,7 +5,7 @@
       ["满脸喜气","mǎn liǎn xǐqì", "face beaming with joy"],
       ["喜气洋洋","xǐqì yáng yáng","full of joy, jubilant"]
     ],
-    "image_url": ""
+    "image_url": "http://i.imgur.com/RJLyem1.jpg"
   },
   {
     "term": ["突然", "tūrán", "suddenly, abruptly"],
@@ -14,14 +14,16 @@
       ["突然得病", "tūrán débìng", "suddenly fall ill"],
       ["突然所有的灯都灭了", "tūrán sǔoyǒu de dēng dōu miè le", "Suddenly, all the lights went out."]
     ],
-    "image_url": ""
+    "image_url": "http://i.imgur.com/zzMnrWP.png"
   },
   {
     "term": ["热烈", "rèliè", "warm, enthusiastic, ardent"],
     "usages": [
       ["热烈的掌声", "rèliè de zhǎngshēng", "warm applause"],
       ["表示热烈欢迎", "biǎoshì rèliè hūanyíng", "offer a warm welcome"]
-    ]
-
+    ],
+    "image_url": "http://i.imgur.com/ZXbDokU.jpg"
+  }
+]
 
 
