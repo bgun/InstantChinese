@@ -11,16 +11,21 @@ var {
   View,
 } = React;
 
-var Main = require('./main.js');
+var TermListView = require('./TermListView.js');
 var styles = require('./styles.js');
 
-var InstantChinese = React.createClass({
-  render: function() {
+var data = require('./data.json');
+
+class InstantChinese extends React.Component {
+
+  render() {
     return (
       <View style={ styles.main }>
+        <TermListView data={ data } />
       </View>
     );
   }
-});
+
+}
 
 AppRegistry.registerComponent('InstantChinese', () => InstantChinese);

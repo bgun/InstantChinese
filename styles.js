@@ -6,7 +6,7 @@ var {
 module.exports = StyleSheet.create({
 
   main: {
-    backgroundColor: '#FF0000',
+    backgroundColor: '#FF00FF',
     flex: 1
   }
 
