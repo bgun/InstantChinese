@@ -6,6 +6,8 @@ var {
   View,
 } = React;
 
+import TermItemView from './TermItemView.js';
+
 export default class TermListView extends React.Component {
 
   constructor(props) {
@@ -20,9 +22,7 @@ export default class TermListView extends React.Component {
     return (
       <ListView
         dataSource={ this.state.dataSource }
-        renderRow={
-          (rowData) => <Text>{ rowData }</Text>
-        }
+        renderRow={ (rowData) => <TermItemView term={ rowData } /> }
       />
     );
   }
