@@ -1,40 +1,31 @@
-import React from 'react-native';
+import React  from 'react-native';
+import Swiper from 'react-native-swiper';
 
 var {
+  Dimensions,
   ListView,
   Text,
   View,
 } = React;
 
+var {
+  width,
+  height
+} = Dimensions.get('window');
+
 import TermItemView from './TermItemView.js';
+
 
 export default class TermListView extends React.Component {
 
-  constructor(props) {
-    super();
-    let ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
-    this.state = {
-      dataSource: ds.cloneWithRows(props.data),
-      layout: {
-        width: 100
-      }
-    };
-  }
-
-  onLayout(event) {
-    this.setState({
-      layout: event.nativeEvent.layout
-    })
-  }
-
   render() {
+    let items = this.props.data.map(i => (
+      <TermItemView term={ i } width={ width } height={ height } />
+    ));
     return (
-      <ListView
-        style={{ flex: 1, flexDirection: 'column' }}
-        onLayout={ this.onLayout.bind(this) }
-        dataSource={ this.state.dataSource }
-        renderRow={ (rowData) => <TermItemView term={ rowData } size={ this.state.layout.width } /> }
-      />
+      <Swiper>
+        { items }
+      </Swiper>
     );
   }
 
